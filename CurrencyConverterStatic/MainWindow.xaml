@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CurrencyConverterStatic" xmlns:fa="http://schemas.fontawesome.io/icons/"
         mc:Ignorable="d"
-        Title="Currency Converter" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" Icon="/Images/wraith.png">
+        Title="Currency Converter" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" Icon="/Images/Money_Bag.png">
 
     <TabControl Name="tbMain" TabStripPlacement="Top">
 
@@ -49,9 +49,9 @@
         </StackPanel>
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Height="90" Width="800" VerticalAlignment="Bottom">
             <TextBox Name="txtCurrency" Width="200" Height="30" Margin="40 0 0 0" PreviewTextInput="NumberValidationTextBox" FontSize="18" VerticalContentAlignment="Center" VerticalAlignment="Top"></TextBox>
-            <ComboBox Name="cmbFromCurrency" Width="170" Height="30" Margin="60 0 40 0" FontSize="18" VerticalContentAlignment="Center" VerticalAlignment="Top" MaxDropDownHeight="150"></ComboBox>
-            <fa:ImageAwesome Icon="Exchange" Height="30" Width="30" Foreground="White" VerticalAlignment="Top"></fa:ImageAwesome>
-            <ComboBox Name="cmbToCurrency" Width="170" Height="30" Margin="40 0 0 0" FontSize="18" VerticalContentAlignment="Center" VerticalAlignment="Top" MaxDropDownHeight="150"></ComboBox>
+                    <ComboBox Name="cmbFromCurrency" Width="170" Height="30" Margin="60 0 40 0" FontSize="18" VerticalContentAlignment="Center" VerticalAlignment="Top" MaxDropDownHeight="150" SelectionChanged="cmbFromCurrency_SelectionChanged"></ComboBox>
+                    <fa:ImageAwesome Icon="Exchange" Height="30" Width="30" Foreground="White" VerticalAlignment="Top"></fa:ImageAwesome>
+                    <ComboBox Name="cmbToCurrency" Width="170" Height="30" Margin="40 0 0 0" FontSize="18" VerticalContentAlignment="Center" VerticalAlignment="Top" MaxDropDownHeight="150" SelectionChanged="cmbToCurrency_SelectionChanged"></ComboBox>
         </StackPanel>
         <StackPanel Grid.Row="3" Height="100" Width="1000" Orientation="Horizontal">
             <Button Name="Convert" Height="40" Width="150" Content="Convert" Click="Convert_Click" Margin="350 0 20 0" Foreground="White" FontSize="20" Style="{StaticResource ButtonRound}">
@@ -72,7 +72,7 @@
             </Button>
         </StackPanel>
         <StackPanel Grid.Row="4" Height="150" Width="800" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
-            <Image Height="150" Width="150" Source="/Images/Nezuko_anime_2.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="325 0"/>
+            <Image Height="150" Width="150" Source="/Images/Money_1.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="325 0"/>
         </StackPanel>
     </Grid>
         </TabItem>
@@ -141,7 +141,7 @@
                             <DataGridTemplateColumn Header="" Width="70" IsReadOnly="True" DisplayIndex="0">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
-                                        <Image Source="/Images/pastel.png" ToolTip="Edit" Width="20" Height="20"  x:Name="Revise"/>
+                                        <Image Source="/Images/edit.png" ToolTip="Edit" Width="20" Height="20"  x:Name="Revise"/>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
                             </DataGridTemplateColumn>
@@ -149,8 +149,7 @@
                             <DataGridTemplateColumn Header="" Width="70" IsReadOnly="True" DisplayIndex="1">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
-                                        <!--Height="150" Width="150" Source="/Images/Nezuko_anime_2.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="325 0"-->
-                                        <Image Source="/Images/TrashME.png" ToolTip="Delete" Width="20" Height="20"  x:Name="Delete"/>
+                                        <Image Source="/Images/Trash_Can.png" ToolTip="Delete" Width="20" Height="20"  x:Name="Delete"/>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
                             </DataGridTemplateColumn>
@@ -161,7 +160,7 @@
                     </DataGrid>
                 </StackPanel>
                 <StackPanel Grid.Row="4" Height="150" Width="800" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
-                    <Image Height="150" Width="200" Source="/Images/kill34.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="300 0"/>
+                    <Image Height="150" Width="200" Source="/Images/Database_Storage.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="300 0"/>
                 </StackPanel>
             </Grid>
         </TabItem>
