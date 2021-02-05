@@ -133,21 +133,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\TrashME.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\wraith.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Nezuko_anime_2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\pastel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\kill34.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Database\CurrencyConverter.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
